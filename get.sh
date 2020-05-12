@@ -4,11 +4,11 @@ if [[ $largeFiles ]]; then
 	echo "$largeFiles" &&
 	echo "=> Please Now Do It Yourself !"
 else
-    bash registerCredential.sh &&
-	bash clearCredential.sh &&
+    ./registerCredential.sh &&
+	./clearCredential.sh &&
 	git add . &&
 	git commit -am "get proj" &&
 	git push &&
-	bash clearCredential.sh &&
+	./clearCredential.sh &&
 	echo "=> DONE !!!"
 fi
